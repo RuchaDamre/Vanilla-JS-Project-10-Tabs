@@ -1,0 +1,147 @@
+body {
+    background-color: rgb(238, 243, 247);
+}
+
+main {
+    padding: 50px;
+}
+
+#nature-img {
+    width: 550px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 0;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#desp {
+    letter-spacing: 1px;
+    text-align: center;
+    color: rgb(93, 120, 145);
+    margin-bottom: 65px;
+}
+
+section {
+    display: flex;
+    gap: 35px;
+}
+
+.content {
+    background-color: white;
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#info {
+    line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(93, 120, 145);
+    padding: 0 20px 20px 20px;
+}
+
+h4 {
+    letter-spacing: 3px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 20px 0 20px;
+}
+
+.tabs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.tab {
+    flex-grow: 1;
+    cursor: pointer;
+    background-color: rgb(199, 218, 231);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.tab:hover:not(.active) {
+    background-color: rgb(225, 242, 252);
+    color: rgb(156, 201, 231);
+}
+
+li {
+    flex-grow: 1;
+}
+
+.side-content {
+    display: none;
+}
+
+.tab:nth-child(1) {
+    border-top-left-radius: 10px;
+}
+
+.tab:nth-child(3) {
+    border-top-right-radius: 10px;
+}
+
+.tab.active {
+    background-color: white;
+}
+
+.side-content.active {
+    display: block;
+}
+
+@media (max-width:768px) {
+
+    section {
+        flex-direction: column;
+    }
+
+    #nature-img {
+        width: 320px;
+        height: 170px;
+        margin: auto;
+        display: block;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding: 20px 20px 0 20px;
+    }
+
+    #desp {
+        font-size: 14px;
+        padding: 0 20px 0 20px;
+        margin-bottom: 40px;
+    }
+
+    #heading {
+        font-size: 13px;
+    }
+
+    #info {
+        font-size: 12px;
+    }
+
+    .content {
+        margin: 0 20px 20px 20px;
+    }
+
+}
